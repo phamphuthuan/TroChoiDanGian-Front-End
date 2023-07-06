@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.classify {
+    margin-top: 10vh;
+
+}
+
+.title h1 {
+    text-align: center;
+    padding: 4vh 0 0.5vh 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: xx-large;
+    width: max-content;
+    max-width: 100%;
+    margin: auto auto 3vh auto;
+}
+
+h1 {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ff1b1b;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+h1:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    align-content: space-around;
+    padding: 3vh 0 0 0;
+}
+
+.clickable-card {
+    margin-bottom: 9vh;
+    display: block;
+    max-width: 400px;
+    margin-inline: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center center;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    color: black;
+    border: 0px solid #111;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.417);
+}
+
+.clickable-card h2,
+.clickable-card .read-more {
+    transition: color 0.4s ease-in-out;
+}
+
+.clickable-card img {
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.clickable-card:hover .read-more,
+.clickable-card:focus .read-more,
+.clickable-card:hover h2,
+.clickable-card:focus h2 {
+    color: #28666e;
+}
+
+.clickable-card:hover img,
+.clickable-card:focus img {
+    transform: scale(1.1);
+}
+
+.article-body {
+    padding: 24px;
+}
+
+.clickable-card h2 {
+    margin: 0 0 18px 0;
+
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    transition: color 0.3s ease-out;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+/************************
+  Generic layout 
+  **************************/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 48px 0;
+    font-family: "Figtree", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    background-image: linear-gradient(45deg, #aaa, #111);
+    min-height: 100vh;
+}

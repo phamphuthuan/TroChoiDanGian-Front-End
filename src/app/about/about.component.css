@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Nguyên tắc
+                1. từ ngoài vào trong
+                2. từ trên xuống dưới
+                3. tổng quan đến chi tiết
+                */
+
+
+/* 
+                1. Vị trí
+                2. Kích thước
+                3. Màu sắc
+                4. Kiểu
+                */
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hàm dùng chung */
+.clear {
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* PC */
+
+/* @media(min-width: 1024px) {} */
+
+
+/* Tablet */
+
+/* @media(min-width: 740px) and (max-width: 1023px) {
+    #slider .slider-img {
+        width: 1024px;
+    }
+} */
+
+
+/* Mobile */
+
+/* @media(max-width: 740px) {} */

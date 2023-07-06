@@ -1,0 +1,48 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 75%;
+    margin: 6.5vh auto 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.528);
+}
+
+.content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    padding: 5vh 1.5vh 1.5vh 1.5vh;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 23px;
+    padding: 10px 5vh 0 5vh;
+    line-height: 20px;
+
+}
+
+.content img {
+    border: 0 none;
+    height: auto;
+    margin: 0 auto 0 auto;
+    padding: 3vh 3vh 0 3vh;
+    width: 60%;
+    height: 30%;
+}
+
+.content p {
+    padding: 0 5vh 3px 5vh;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.content .sub-image {
+    color: gray;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}

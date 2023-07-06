@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+}
+
+.container {
+    flex-direction: row-reverse;
+    padding: 0;
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/DuaThuyen1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: left;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+.border {
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>h2 {
+    margin: 3vh 0 0 0;
+    color: #ff0000;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid #fff;
+    background-color: rgba(221, 221, 221, 0.729);
+}
+
+.header>h4 {
+    padding: 1vh;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.879);
+}
+
+.form {
+    max-width: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form>p {
+    text-align: right;
+}
+
+.form>p>a {
+    color: #000;
+    font-size: 14px;
+}
+
+.form-field {
+    height: 46px;
+    padding: 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+}
+
+.form-field:focus {
+    border-color: #0f7ef1;
+}
+
+.label-size {
+    height: 13vh;
+}
+
+.form>button {
+    margin-bottom: 5vh;
+    padding: 12px 10px;
+    border: 0;
+    background: linear-gradient(to right, #ff0062 0%, #ED1E26 100%);
+    border-radius: 3px;
+    margin-top: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.animation {
+    animation-name: move;
+    animation-duration: .4s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+.a0 {
+    animation-delay: 1s;
+}
+
+.a1 {
+    animation-delay: 2s;
+}
+
+.a2 {
+    animation-delay: 2.1s;
+}
+
+.a3 {
+    animation-delay: 2.2s;
+}
+
+.a4 {
+    animation-delay: 2.3s;
+}
+
+.a5 {
+    animation-delay: 2.4s;
+}
+
+.a6 {
+    animation-delay: 2.5s;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        padding: 20px 40px 20px 50px;
+        width: 440px;
+    }
+}
